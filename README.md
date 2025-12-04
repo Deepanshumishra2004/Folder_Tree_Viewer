@@ -1,4 +1,4 @@
-📁 Folder Tree Viewer — React + TypeScript + SCSS
+## 📁 Folder Tree Viewer
 
 A simple Folder Tree Viewer built using React, TypeScript, and SCSS.
 It displays folders and files in a collapsible tree structure using recursive components.
@@ -46,7 +46,7 @@ Follow these steps to run the project locally.
 
 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Deepanshumishra2004/Folder_Tree_Viewer.git
 ```
 
 
