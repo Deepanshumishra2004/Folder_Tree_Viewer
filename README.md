@@ -3,7 +3,7 @@
 A simple Folder Tree Viewer built using React, TypeScript, and SCSS.
 It displays folders and files in a collapsible tree structure using recursive components.
 
-🚀 Features
+# 🚀 Features
 
 📁 Collapsible folders
 
@@ -17,7 +17,7 @@ It displays folders and files in a collapsible tree structure using recursive co
 
 🔁 Fully recursive structure
 
-📦 Tech Stack
+# 📦 Tech Stack
 
 React (Vite)
 
@@ -25,7 +25,7 @@ TypeScript
 
 SCSS / SASS
 
-📂 Project Structure
+# 📂 Project Structure
 ```bash
 src/
  ├── components/
@@ -40,19 +40,13 @@ src/
  └── main.tsx
 ```
 
-🛠️ Local Installation & Setup
+# 🛠️ Local Installation & Setup
 
 Follow these steps to run the project locally.
 
 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Deepanshumishra2004/Folder_Tree_Viewer.git
-```
-
-
-Eg:
-```bash
-git clone https://github.com/your-username/folder-tree-viewer.git
 ```
 
 2️⃣ Go Into the Project Folder
@@ -80,7 +74,7 @@ http://localhost:5173/
 
 Open it in your browser to see the Folder Tree Viewer.
 
-📁 Running SCSS/SASS
+# 📁 Running SCSS/SASS
 
 No extra steps required — SCSS works automatically via Vite.
 Just ensure you import your SCSS file:
