@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+📁 Folder Tree Viewer — React + TypeScript + SCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Folder Tree Viewer built using React, TypeScript, and SCSS.
+It displays folders and files in a collapsible tree structure using recursive components.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📁 Collapsible folders
 
-## React Compiler
+📄 Files shown as leaf nodes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 Click a folder to expand/collapse
 
-## Expanding the ESLint configuration
+➡️ Children appear to show hierarchy
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎨 Styled using SCSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔁 Fully recursive structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📦 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+React (Vite)
+
+TypeScript
+
+SCSS / SASS
+
+📂 Project Structure
+```bash
+src/
+ ├── components/
+ │    └── TreeNode/
+ │         ├── TreeNode.tsx
+ │         ├── TreeNode.scss
+ ├── data/
+ │    └── folderData.ts
+ ├── type/
+ │    └── folder.types.ts
+ ├── App.tsx
+ └── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🛠️ Local Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Follow these steps to run the project locally.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1️⃣ Clone the Repository
+```bash
+git clone <your-repo-url>
+```
+
+
+Eg:
+```bash
+git clone https://github.com/your-username/folder-tree-viewer.git
+```
+
+2️⃣ Go Into the Project Folder
+cd folder-tree-viewer
+
+3️⃣ Install Dependencies
+```bash
+npm install
+```
+
+This will install React, TypeScript, SCSS, Vite, and all required packages.
+
+4️⃣ Start the Development Server
+```bash
+npm run dev
+```
+
+5️⃣ Open the App in Browser
+
+Vite will show a local URL like:
+
+```bash
+http://localhost:5173/
+```
+
+Open it in your browser to see the Folder Tree Viewer.
+
+📁 Running SCSS/SASS
+
+No extra steps required — SCSS works automatically via Vite.
+Just ensure you import your SCSS file:
+
+```bash
+import "./TreeNode.scss";
 ```
